@@ -148,16 +148,13 @@ public class App {
                 continue;
             }
             double PriceOfFood = Double.parseDouble(priceStr);
-            System.out.print("Would you like to enter more food options ? true or false : ");
+            System.out.print("Would you like to enter more food options ? Yes or No : ");
             String MoreFoodStr = input3.nextLine();
-            if (!isBoolean(MoreFoodStr)) {
+            Boolean MoreFoods = YesNo(MoreFoodStr);
+            if (MoreFoods == null) {
                 continue;
             } else {
-                if (MoreFoodStr.equalsIgnoreCase("true")) {
-                    MoreFood = true;
-                } else {
-                    MoreFood = false;
-                }
+                MoreFood = MoreFoods;
             }
 
             // Putting this information into the Array Lists- Food Items
@@ -419,16 +416,6 @@ public class App {
         }
     }
 
-    // checks if the string is a boolean
-    public static boolean isBoolean(String str) {
-        if (str.equalsIgnoreCase("true") || str.equalsIgnoreCase("false")) {
-            return true;
-        } else {
-            System.out.println("Please only enter true or false");
-            return false;
-        }
-    }
-
     // Checks the Start of every word is capitalized like it is in driver.txt for
     // the Location
     public static String capitalizeLocation(String location) {
@@ -456,5 +443,17 @@ public class App {
             }
         }
         return result.toString();
+    }
+
+    public static Boolean YesNo(String answer) {
+        answer = answer.toUpperCase();
+        if (answer.equals("YES")) {
+            return true;
+        } else if (answer.equals("NO")) {
+            return false;
+        } else {
+            System.out.println("Please only enter Yes or No not " + answer);
+            return null;
+        }
     }
 }
