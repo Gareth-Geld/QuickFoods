@@ -1,0 +1,22 @@
+
+Order Number : 12345
+Customer: Gareth Geldenhuys
+Email: Gareth@gmail.com
+phone Number: 082 846 7143
+Location : Cape Town
+
+You have ordered the following from McDonalds in Cape Town
+
+2 x Big Mac (R60.0)
+1 x Chicken Nuggets (R60.0)
+2 x Coke (R20.0)
+
+Special Instructions: none
+
+Total: 220.0
+
+Miranda Metcalfe is the nearest to the Restaurant and so he will be delivering your order to you at:
+
+49 Ibis Road
+
+If you need to contact the Restaurant, their number is 082 546 7654.
