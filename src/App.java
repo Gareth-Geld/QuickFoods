@@ -445,6 +445,8 @@ public class App {
         return result.toString();
     }
 
+    // This function checks if the String is yes or no
+    // Subsequently returns true or false or Null
     public static Boolean YesNo(String answer) {
         answer = answer.toUpperCase();
         if (answer.equals("YES")) {
